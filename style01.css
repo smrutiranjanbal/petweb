@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Light background for the whole page */
+    text-align: center;
+}
+
+header {
+    background-color: #408f42; 
+    color: rgb(255, 255, 255);
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+header .logo h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    line-height: 60px;
+}
+
+nav ul li a:hover {
+    color: #d4ff00;
+    transform: scale(1.1);
+}
+
+/* Sign In Section Styles */
+#sign-in {
+    padding: 60px 20px;
+    background: linear-gradient(145deg, #56ab2f, #a8e063); /* Green gradient for the sign-in window */
+}
+
+.form-container {
+    background-color: rgba(0, 116, 42, 0.753);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.form-container:hover {
+    transform: scale(1.02); /* Slight scale on hover */
+}
+
+h2 {
+    font-size: 36px;
+    color: #e3f2e4;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.form-field {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    background-color: #fff;
+}
+
+button.cta-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button.cta-btn:hover {
+    background-color: #054902;
+}
+
+p a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #054902;
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}

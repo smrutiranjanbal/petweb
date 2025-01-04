@@ -1,0 +1,336 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fafafa; /* Light background for the whole page */
+    text-align: center;
+}
+
+header {
+    background-color: #408f42 ; 
+    color: white;
+    padding: 0 40px; /* Adjust padding to ensure the height remains consistent */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 60px; /* Set the height of the navbar to 60px */
+}
+
+header .logo h1 {
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    line-height: 60px; /* Vertically align text within the navbar */
+}
+
+nav ul li a:hover {
+    color: #d4ff00;
+    transform: scale(1.1);
+}
+
+nav ul li .sign-in-btn {
+    background-color: #d4ff00;
+    color: #4CAF50;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: none;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li .sign-in-btn:hover {
+    background-color:#4CAF50 ; 
+    color:#d4ff00; 
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+/* About Us Section */
+#about {
+    background-color: #4CAF50; /* Set the background color to the same as the header */
+    color: white;  /* Ensure the text is white for readability */
+    padding: 50px 20px;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Our Mission Section */
+#mission {
+    background-color: #e6f7e6;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#mission h2 {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#mission p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Our Values Section */
+#values {
+    background-color: #f0f9f0;
+}
+
+#values h2 {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#values ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    text-align: left;
+    margin: 10px;
+    max-width: 800px;
+}
+
+#values ul li {
+    margin: 12px 0;
+}
+
+/* Adoption Process Section */
+#adoption-process {
+    background-color: #ffffff;
+}
+
+#adoption-process h2 {
+    font-size: 32px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.infographic {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.step {
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f0f9f0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.step:hover {
+    transform: scale(1.05);
+}
+
+.step img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.step p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Join Our Team Section */
+#join-team {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#join-team h2 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#join-team p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+#join-team .cta-btn {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#join-team .cta-btn:hover {
+    background-color: #388e3c;
+}
+
+/* FAQ Section */
+#faq {
+    background-color: #ffffff;
+}
+
+#faq h2 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.faq-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #e6f7e6;
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+/* Footer Section */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 18px;
+    border-top: 4px solid #FFD700;
+}
+
+footer .contact-info {
+    margin-bottom: 20px;
+}
+
+footer .contact-info p {
+    font-size: 16px;
+}
+
+footer .social-links {
+    font-size: 18px;
+}
+
+footer .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer .social-icon {
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+footer .social-icon img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+footer .social-icon:hover {
+    background-color: #418f38;
+    color: #4CAF50;
+}
+
+footer .social-icon.facebook:hover {
+    background-color: #418f38;
+}
+
+footer .social-icon.instagram:hover {
+    background-color: #418f38;
+}
+
+footer .social-icon.twitter:hover {
+    background-color: #418f38;
+}
+
+footer .social-icon img:hover {
+    transform: scale(1.1);
+}
